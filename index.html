@@ -26,23 +26,17 @@ header img {
     height: 60px;
 }
 
-header .logo-text {
+.logo-text {
     margin-left: 15px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    line-height: 1.1;
 }
 
-header .logo-text span:first-child {
+.logo-text span:first-child {
     font-size: 22px;
     font-weight: bold;
-    color: #333;
 }
 
-header .logo-text span:last-child {
+.logo-text span:last-child {
     font-size: 16px;
-    color: #555;
 }
 
 .container {
@@ -59,11 +53,6 @@ h2 {
     color: #333;
 }
 
-.slider {
-    position: relative;
-    overflow: hidden;
-}
-
 .slides {
     width: 100%;
     display: none;
@@ -71,8 +60,8 @@ h2 {
 }
 
 button {
-    padding: 8px 12px;
-    border-radius: 6px;
+    padding: 10px;
+    border-radius: 8px;
     border: none;
     cursor: pointer;
 }
@@ -85,26 +74,22 @@ button {
 
 .booking-buttons a {
     display: flex;
-    align-items: center;
     justify-content: center;
-    gap: 10px;
-    padding: 10px;
+    padding: 12px;
     border-radius: 8px;
+    margin-top: 8px;
     text-decoration: none;
     font-weight: bold;
-    margin-top: 6px;
 }
 
 .wa { background:#25D366; color:white; }
 .booking { background:#003580; color:white; }
 .facebook { background:#1877f2; color:white; }
 
-.landmark-btn {
-    background:#4caf50;
-    color:white;
-    padding:10px 15px;
-    border-radius:8px;
-    font-weight:bold;
+footer {
+    background:#ddd;
+    text-align:center;
+    padding:15px;
 }
 
 .modal {
@@ -126,14 +111,7 @@ button {
 
 .close {
     float:right;
-    font-size:20px;
     cursor:pointer;
-}
-
-footer {
-    background:#ddd;
-    text-align:center;
-    padding:15px;
 }
 </style>
 </head>
@@ -142,9 +120,9 @@ footer {
 
 <header>
     <div>
-        <img src="images/logo.png" alt="Rose Villa Ella Logo">
+        <img src="images/logo.png" alt="Rose Villa Ella">
         <div class="logo-text">
-            <span>ROSE VILLA</span>
+            <span>ROSE VILLA</span><br>
             <span>Ella</span>
         </div>
     </div>
@@ -156,45 +134,22 @@ footer {
 <p>Enjoy a relaxing stay at our homestay with clean rooms, calm environment and friendly service.</p>
 
 <h2>Gallery</h2>
-<div class="slider">
-    <img class="slides" src="images/livingroom1.jpg">
-    <img class="slides" src="images/bedroom1.jpg">
-    <img class="slides" src="images/washroom1.jpg">
-    <img class="slides" src="images/balcony1.jpg">
-    <img class="slides" src="images/livingroom2.JPG">
-    <img class="slides" src="images/bedroom2.jpg">
-    <img class="slides" src="images/washroom2.jpg">
-    <img class="slides" src="images/bedroom3.jpg">
-    <img class="slides" src="images/bedroom4.jpg">
-    <img class="slides" src="images/washroom3.jpg">
-    <img class="slides" src="images/bedroom5.jpg">
-    <img class="slides" src="images/bedroom6.jpg">
-    <img class="slides" src="images/washroom4.jpg">
-    <img class="slides" src="images/bedroom7.jpg">
-</div>
+<img class="slides" src="images/bedroom1.jpg">
+<img class="slides" src="images/bedroom2.jpg">
+<img class="slides" src="images/washroom1.jpg">
+<img class="slides" src="images/balcony1.jpg">
 
 <div style="text-align:center;margin-top:10px;">
     <button onclick="changeSlide(-1)">❮ Prev</button>
     <button onclick="changeSlide(1)">Next ❯</button>
 </div>
 
-<br>
-<button class="landmark-btn" onclick="openLandmarks()">📍 Closest Landmarks</button>
-
-<h2>Rooms & Capacity</h2>
-<ul>
-    <li><strong>3 Family Bedrooms</strong> – Up to 4 persons</li>
-    <li><strong>1 Double Bedroom</strong> – 2 persons</li>
-</ul>
-
 <h2>Facilities</h2>
 <ul>
     <li>Free WiFi</li>
-    <li>Parking available</li>
-    <li>Laundry facilities</li>
+    <li>Parking Available</li>
     <li>Hot Water</li>
-    <li>Clean & spacious rooms</li>
-    <li>Calm nature environment</li>
+    <li>Calm Nature Environment</li>
 </ul>
 
 <h2>Contact Us</h2>
@@ -202,63 +157,62 @@ footer {
     <p><b>Phone:</b> 057 205 0471</p>
     <p><b>WhatsApp:</b> 077 551 3201</p>
     <p><b>Email:</b> rosevillaella@gmail.com</p>
-    <p><b>Location:</b> Ella, Sri Lanka</p>
 </div>
+
+<!-- ✅ OUR LOCATION INSIDE CONTAINER -->
+<h2>Our Location</h2>
+
+<div style="width:100%;height:350px;border-radius:10px;overflow:hidden;">
+<iframe
+src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.8022214817274!2d81.0488458!3d6.8713679!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae465002c4f02ed%3A0x956db0c97f3fb52b!2sRose%20Villa%20Ella!5e0!3m2!1sen!2slk!4v1700000000000"
+width="100%" height="350" style="border:0;" loading="lazy">
+</iframe>
+</div>
+
+<br>
+
+<a href="https://maps.app.goo.gl/FotLE3W3KxY7njBw7" target="_blank"
+style="display:block;text-align:center;background:#4285F4;color:white;
+padding:12px;border-radius:8px;font-weight:bold;text-decoration:none;">
+📍 Open in Google Maps
+</a>
+
+<br>
+
+<button onclick="openReviews()"
+style="width:100%;background:#fbbc05;padding:12px;
+border:none;border-radius:8px;font-weight:bold;">
+⭐ View Google Reviews
+</button>
 
 <h2>Book Your Stay</h2>
 <div class="booking-buttons">
-    <a class="wa" href="https://wa.me/94775513201" target="_blank">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" width="24">
-        Book via WhatsApp
-    </a>
-
-    <a class="booking" href="https://www.booking.com/hotel/lk/rose-villa-ella-ella1.en-gb.html" target="_blank">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/Booking.com_Icon_2022.svg" width="24">
-        Booking.com
-    </a>
-
-    <a class="facebook" href="https://www.facebook.com/profile.php?id=61585190937770" target="_blank">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/1/1b/Facebook_icon.svg" width="24">
-        Facebook Page
-    </a>
-
-    <!-- Driver Accommodation Button -->
-    <a href="tel:0572050471"
-       style="display:flex;align-items:center;justify-content:center;gap:8px;
-              background:#ff9800;color:white;padding:10px;border-radius:8px;
-              text-decoration:none;font-weight:bold;">
-        🚖 Driver Accommodation – Call
-    </a>
+    <a class="wa" href="https://wa.me/94775513201">WhatsApp Booking</a>
+    <a class="booking" href="https://www.booking.com/hotel/lk/rose-villa-ella-ella1.en-gb.html">Booking.com</a>
+    <a class="facebook" href="https://www.facebook.com/profile.php?id=61585190937770">Facebook Page</a>
 </div>
 
-</div>
+</div> <!-- ✅ CONTAINER CLOSED HERE -->
 
 <footer>
 © 2025 Rose Villa Ella
 </footer>
 
-<a href="https://wa.me/94775513201" target="_blank"
-style="position:fixed;bottom:20px;right:20px;background:#25D366;color:white;
-padding:15px 20px;border-radius:50px;font-weight:bold;text-decoration:none;">
-WhatsApp Booking
-</a>
-
-<!-- LANDMARK MODAL -->
-<div id="landmarkModal" class="modal">
+<!-- REVIEWS MODAL -->
+<div id="reviewModal" class="modal">
 <div class="modal-content">
-<span class="close" onclick="closeLandmarks()">✖</span>
-<h3>Closest Landmarks</h3>
-<ul>
-<li>Start of path to Nine Arch Bridge – 130 m</li>
-<li>Ella Super – 390 m</li>
-<li>Ella Spice Garden – 430 m</li>
-<li>R. M. S Antique And Brass Ware – 390 m</li>
-<li>Ella Forest Reserve – 410 m</li>
-<li>Medical Center – 680 m</li>
-<li>Ella Railway Station – 730 m</li>
-<li>Kinellan Tea Factory – 850 m</li>
-<li>Demodara Nine Arch Bridge – 900 m</li>
-</ul>
+<span class="close" onclick="closeReviews()">✖</span>
+<h3>Guest Reviews</h3>
+
+<p>⭐ ⭐ ⭐ ⭐ ⭐<br>Very clean rooms and great location.</p>
+<p>⭐ ⭐ ⭐ ⭐ ⭐<br>Friendly owners and calm environment.</p>
+<p>⭐ ⭐ ⭐ ⭐<br>Walking distance to Nine Arch Bridge.</p>
+
+<a href="https://maps.app.goo.gl/FotLE3W3KxY7njBw7" target="_blank"
+style="display:block;text-align:center;background:#4285F4;color:white;
+padding:10px;border-radius:6px;text-decoration:none;">
+Read All Reviews on Google Maps
+</a>
 </div>
 </div>
 
@@ -280,21 +234,14 @@ function changeSlide(n) {
     showSlide(slideIndex);
 }
 
-function autoSlide() {
-    slideIndex++;
-    showSlide(slideIndex);
-    setTimeout(autoSlide, 5000);
-}
-
 showSlide(slideIndex);
-autoSlide();
 
-function openLandmarks() {
-    document.getElementById("landmarkModal").style.display = "block";
+function openReviews() {
+    document.getElementById("reviewModal").style.display = "block";
 }
 
-function closeLandmarks() {
-    document.getElementById("landmarkModal").style.display = "none";
+function closeReviews() {
+    document.getElementById("reviewModal").style.display = "none";
 }
 </script>
 
